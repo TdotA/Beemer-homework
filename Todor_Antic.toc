@@ -1,0 +1,11 @@
+\babel@toc {nil}{}
+\beamer@sectionintoc {1}{What is combinatorics?}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Roots of combinatorics}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Basic objects of study of combinatorics}{5}{0}{1}
+\beamer@sectionintoc {2}{Factorials}{11}{0}{2}
+\beamer@subsectionintoc {2}{1}{Factorial of 0}{12}{0}{2}
+\beamer@subsectionintoc {2}{2}{Use of factorials}{12}{0}{2}
+\beamer@sectionintoc {3}{Binomal theorem}{19}{0}{3}
+\beamer@sectionintoc {4}{Permutations}{20}{0}{4}
+\beamer@subsectionintoc {4}{1}{Permutations with and without repetition}{21}{0}{4}
+\beamer@subsectionintoc {4}{2}{Calculating the number of permutations}{22}{0}{4}
