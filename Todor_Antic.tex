@@ -1,0 +1,115 @@
+\documentclass[11pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usetheme{AnnArbor}
+\useinnertheme{circles}
+\useoutertheme{smoothtree}
+\newtheorem{defn}{Definition}
+
+\begin{document}
+	\author{Todor Antic}
+	\title{Combinatorics}
+	\institute{UP Famnit}
+	\subtitle{Factorials, Permutations and Combinations}
+	%\setbeamercovered{transparent}
+	%\setbeamertemplate{navigation symbols}{}
+	\begin{frame}[plain]
+		\maketitle
+		\begin{center}
+			\url{todorantic29@gmail.com}
+		\end{center}	
+	\end{frame}
+	\begin{frame}
+		\tableofcontents
+	\end{frame}
+	\section{What is combinatorics?}
+	\begin{frame}{What is combinatorics?}
+		\begin{defn}
+			Combinatorics is a branch of mathematics that studies (usu-
+			ally finite) collections of objects that satisfy specified criteria and \alert{counting} of said objects. 
+		\end{defn}
+		
+	\end{frame}
+
+
+	\subsection{Roots of combinatorics}
+	\begin{frame}
+		Basic combinatorial concepts and enumerative results appeared throughout the ancient world. In the 6th century BCE, ancient Indian physician Sushruta asserts in Sushruta Samhita that 63 combinations can be made out of 6 different tastes, taken one at a time, two at a time, etc., thus computing all $2^6 - 1$ possibilities. This is the first known story of mathematicians coliding with combinatorics but the study of combinatorics continued through ancient times, through middle ages and is still ongoing today.
+	\end{frame}
+
+
+
+	\subsection {Basic objects of study of combinatorics}
+	
+	\begin{frame}{Basic objects of study of combinatorics} 
+		
+		Basic objects of study in combinatorics are: 
+		\begin{itemize}
+			\pause
+			\item Factorials
+			\pause 
+			\item Permutations 
+			\begin{itemize}
+				\pause
+				\item  Permutations with repetition 
+				\item  Permutations without repetition
+			\end{itemize}
+			\pause
+			\item Combinations 
+			\begin{itemize}
+				\pause
+				\item Combinations with repetition 
+				\item Combinations without repetition 
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	\section{Factorials}
+	\begin{frame}{Factorials}
+		A factorial of an \alert{integer} $n$ is the \alert{product} of all the integers less than or equal to $n$. 
+		
+		\begin{exampleblock}{Example:}
+			$5! = 5 * 4 * 3 * 2 * 1 = 120$
+		\end{exampleblock}
+		
+		The factorial operation is encountered in many areas of mathematics, notably in combinatorics, algebra, and mathematical analysis. Its most basic use counts the possible distinct sequences \alert{the permutations}  of n distinct objects: there are n!. 
+	\end{frame}
+
+	\subsection{Factorial of 0}
+	\begin{frame}{$O!$}
+		Value of zero factorial is equal to one, or in symbols: $$0! = 1$$ This is because 0! is a product of no elements and is by convention equal to multiplicative identity which is in case of integers, 1.
+		\subsection{Use of factorials}
+		
+	\end{frame}
+
+	\begin{frame}{Applications of factorials}\setbeamercovered{transparent}
+		Factorials can be useful for:
+		\begin{itemize}
+			\item <2-> Calculating the number of permutations
+			\item <3-> Calculating the number of combinations
+			\item <4-> Algebra 
+			\item <5-> Calculus
+			\item <6-> Much more 
+		\end{itemize}
+	\end{frame}
+	\section{Binomal theorem}
+	\begin{frame}{Binomal theorem}
+	\begin{multline}
+	(a + b)^n = \sum_{k=0}^{n}{n \choose k}a^{n-k}b^k  \\= {n \choose 0}a^n + {n \choose 1}a^{n-1}b + \, \cdots \, + {n \choose n-1}ab^{n-1} + {n \choose n}b
+	\end{multline}
+	\begin{proof}
+		\begin{proof}
+			One can establish a bijection between the products of a binomial
+			raised to $n$ and the combinations of $n$ objects. Each product which results
+			in $a^{n-k}b^k$ corresponds to a combination of $k$ objects out of $n$ objects. Thus, each  $a^{n-k} b^k$ term in the polynomial expansion is derived from the sum of ${n \choose k}$ products.
+		\end{proof}
+	\end{proof}
+	\end{frame}
+
+\end{document}
